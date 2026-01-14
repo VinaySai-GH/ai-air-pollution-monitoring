@@ -1,57 +1,65 @@
-🌍 Air Pollution Monitoring and Tracking
-Monitoring
+**🌍 AI & Cloud-Based Air Pollution Monitoring System**
+**📌 Overview**
 
-The primary focus of this project is air pollution monitoring, which involves continuously collecting and analyzing air quality data from multiple real-world sources. The system monitors key pollutants such as PM2.5, NO₂, SO₂, and CO using a combination of ground-based stations and satellite observations.
+This project builds a simple AI and cloud-based system to monitor air pollution using real satellite and ground-level data.
+The system analyzes air quality, identifies pollution hotspots, and visualizes results on an interactive web dashboard.
+It is developed as a socially relevant project under NSS.
 
-Monitoring enables:
+**🎯 Objectives**
 
-Understanding current air quality conditions
+Monitor air pollution using real-world data
 
-Identifying pollution-prone regions
+Analyze PM2.5, NO₂, SO₂, and CO
 
-Visualizing spatial and temporal pollution patterns
+Identify pollution hotspots using machine learning
 
-Tracking of Pollutant Movement
+Provide basic tracking of pollution movement using wind data
 
-In addition to monitoring, the system provides a basic form of pollutant tracking.
+Make air quality information easy to understand through maps and a chatbot
 
-Pollutant tracking in this project refers to:
+**📊 Data Sources**
 
-Observing how pollution levels change across locations over time
+Ground AQI & PM2.5: OpenAQ (CPCB stations)
 
-Estimating the direction of pollution spread using wind speed and wind direction data
+Satellite pollutants: Sentinel-5P (NO₂, SO₂, CO)
 
-Identifying how polluted air masses may affect nearby regions
+Weather data: ERA5 (wind speed, temperature)
 
-This is achieved by combining:
+Cloud platform: Google Earth Engine
 
-Time-varying pollution concentration data
+**🧠 Technologies Used**
 
-Meteorological parameters such as wind speed and direction (ERA5)
+Python, Pandas, NumPy
 
-The tracking is conceptual and directional, focusing on pollution transport at a regional scale rather than precise particle-level movement.
+Machine Learning: Random Forest, K-Means (scikit-learn)
 
-Scope Clarification
+Backend: FastAPI
 
-This system does not attempt to simulate detailed atmospheric chemistry or physical dispersion models. Instead, it provides a simplified, explainable, and visualization-driven approach suitable for awareness, planning, and academic analysis.
+Frontend: HTML, CSS, JavaScript
 
-🔍 How This Differs from Traditional Monitoring Systems
-Aspect	Traditional Systems	Proposed System
-Data sources	Only ground stations	Ground + satellite data
-Spatial coverage	Limited to sensor locations	Large-area regional coverage
-Real-time visualization	Limited or static	Interactive web-based maps
-Tracking capability	Mostly static readings	Time-based pollution movement analysis
-Decision support	Reactive	More proactive and data-driven
-Accessibility	Often technical	Public-friendly visualization
+Maps & Charts: Mapbox, Chart.js
 
-Traditional air quality systems mainly provide point-based measurements, whereas this project enhances monitoring by offering spatial context, trend analysis, and basic movement tracking using AI and cloud-based tools.
+Cloud services: GEE, OpenAQ, Mapbox
 
-🌱 Social Relevance
+**🌬️ Monitoring & Tracking**
 
-By extending traditional monitoring with tracking and visualization, the system helps:
+The system continuously monitors air pollution levels and provides basic tracking of pollutant movement by analyzing how pollution changes over time and aligns with wind direction.
+This helps understand how polluted air spreads across nearby regions.
 
-Raise public awareness about pollution spread
+**💬 AI Chat Assistant**
 
-Identify regions indirectly affected by pollution
+A simple AI-powered chatbot helps users:
 
-Support data-informed environmental and health decisions
+Understand terms like PM2.5 and AQI
+
+Interpret pollution maps and hotspots
+
+Get basic air-quality related guidance
+
+**🔍 How This Differs from Traditional Systems**
+
+Traditional systems mainly show static readings at sensor locations.
+This project enhances monitoring by combining satellite + ground data, adding AI-based analysis, basic pollution movement tracking, and interactive visualization.
+**🌱 Social Relevance (NSS)**
+
+The project promotes air-quality awareness, supports data-driven environmental understanding, and demonstrates ethical use of AI for public good.
